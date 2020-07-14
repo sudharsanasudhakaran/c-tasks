@@ -1,0 +1,96 @@
+Question: 1- Print numbers and count for divisible by 3
+  using System;
+  class HelloWorld {
+  static void Main() {
+    Console.WriteLine("The numbers from 1 to 100 divisible by 3 are..\n");
+    int  count=0;
+    for(int i=3; i<100; i=i+3){
+        count++;
+        Console.WriteLine(i + " ");
+    }
+    Console.WriteLine("\ncount: " + count);
+   }
+}
+
+Question: 2 – Factorial
+using System;
+class Factorial {
+  static void Main() {
+  int n,factorial = 1;
+  Console.WriteLine("Enter a number");
+  n = Convert.ToInt32(Console.ReadLine());
+  for(int i=1; i<=n; i++)
+    factorial*=i;
+  Console.WriteLine("\nThe Factorial of the number" + n + "is " + factorial);
+  }
+}
+
+
+
+
+Question 3 : maximum of a number
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int max = 0;
+            String values = Console.ReadLine();
+            String [] arr = values.Split(',');
+            for(int i=0;i<arr.Length;i++)
+            {
+                if(max<Int32.Parse(arr[i]))
+                     max = Int32.Parse(arr[i]);
+            }
+    	 Console.WriteLine(max);
+        }
+    }
+}
+
+
+Question 4: Print “This number is”
+
+using System;
+class Program
+ { 
+  static void Main(string[] args) 
+  { int number;
+    Console.WriteLine("Enter the number: ");
+    number = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Enter the elements of array: ");
+    for(int i=1; i<=number; i++)
+        Console.WriteLine("This is Number: " + i);
+  }
+}
+
+Question 5: 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Enter your Name");
+            String username = Console.ReadLine();
+            String[] words = username.Split(' ');
+            if(words.Length == 1)
+            {
+                Console.WriteLine("You have entered "+username+". Which has length of "+username.Length+" characters");
+            }
+            else 
+            {
+                Console.WriteLine("Hello your sentence contains "+words.Length+" words. your third word is \""+ words[words.Length - 2]+"\"");
+            }
+        }
+    }
+}
